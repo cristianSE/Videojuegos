@@ -1,0 +1,154 @@
+/* Estilos para el contenedor principal */
+.main-container {
+  margin-top: 75px; /* Ajusta el margen superior según sea necesario */
+}
+
+/* Estilos para el título */
+.titulo {
+  text-align: center;
+  color: white;
+  font-size: 32px; /* Aumenta el tamaño de la fuente */
+  padding: 10px 20px; /* Espaciado interno */
+  border-radius: 10px; /* Bordes redondeados */
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Estilos para el contenedor principal del formulario */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(18, 18, 18, 0.5);
+  border: 2px solid #8a2be2;
+  border-radius: 10px;
+  padding: 20px;
+  width: 80%;
+  max-width: 600px; /* Aumenta el ancho máximo */
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+  margin-top: 20px; /* Ajusta el margen superior */
+}
+
+/* Estilos para el contenedor de entrada */
+.input-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Espacio entre columnas */
+  gap: 15px; /* Espacio entre columnas */
+  width: 100%;
+}
+
+/* Estilos para las columnas */
+.column {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: calc(50% - 15px); /* Dos columnas con espacio entre ellas */
+}
+
+/* Ajuste para igualar alturas de campos */
+.column mat-form-field {
+  flex: 1;
+}
+
+.column-full {
+  width: 100%;
+}
+
+/* Estilos para los campos de entrada */
+.mat-form-field {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+/* Estilos para el botón "Agregar" */
+.mat-raised-button {
+  background-color: #dc69ff; /* Rosa */
+  color: rgb(74, 8, 90);
+  width: 100%;
+}
+
+.mat-raised-button:hover {
+  background-color: #a114ff; /* Rosa más oscuro al pasar el cursor */
+}
+
+/* Estilos para el contenedor del segundo formulario */
+.second-form-container {
+  margin-top: 20px; /* Ajusta el margen superior */
+}
+
+/* Estilos para el botón del segundo formulario */
+.second-form-container .mat-raised-button {
+  background-color: #8a2be2; /* Morado */
+}
+
+/* Estilos para el campo de archivo */
+input[type="file"] {
+  color: white; /* Color del texto */
+  border: none; /* Elimina el borde */
+  outline: none; /* Elimina el contorno */
+  background: transparent; /* Fondo transparente */
+  cursor: pointer; /* Cursor al pasar por encima */
+  -webkit-appearance: none; /* Asegura que no haya estilos predeterminados del navegador */
+  appearance: none; /* Asegura que no haya estilos predeterminados del navegador */
+  margin-bottom: 10px; /* Espacio inferior */
+}
+
+/* Estilos para el texto "Ningún archivo seleccionado" */
+input[type="file"]::placeholder {
+  color: white; /* Color del texto */
+}
+
+/* Estilos para los mensajes de error */
+.error-message {
+  color: red;
+  margin-top: 5px; /* Añade un pequeño margen superior para separarlos */
+}
+
+/* Estilos para los mensajes de éxito */
+.success-message {
+  color: green;
+  margin-top: 5px; /* Añade un pequeño margen superior para separarlos */
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: purple; /* Color morado */
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #5a62cd; /* Cambia el color al pasar el cursor sobre el botón */
+}
+
+/* Estilos para el contenedor del botón "Administrar Usuarios" */
+.button-container-admin {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* Ajusta el margen superior */
+}
+
+.header {
+  background-color: rgba(128, 0, 128, 0.6); /* Morado con 80% de opacidad */
+  padding: 10px;
+}
+
+.headernav {
+  display: flex;
+  justify-content: center;
+}
+
+.headernav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.headernav a.active {
+  font-weight: bold;
+}

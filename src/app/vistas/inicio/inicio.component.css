@@ -1,0 +1,87 @@
+.container {
+    position: relative;
+    overflow: hidden;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    filter: brightness(0.6); /* Ajusta el brillo de la imagen de fondo */
+}
+
+.inicio-container {
+    text-align: center;
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    margin-top: 100px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #8a2be2; /* Morado */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background-color: #6a1b9a; /* Morado oscuro al pasar el ratón */
+}
+
+a {
+    color: #fff; /* Color de enlace blanco */
+    text-decoration: none; /* Quitar subrayado */
+}
+
+a:hover {
+    text-decoration: underline; /* Subrayado al pasar el ratón */
+}
+
+.featured-games {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.featured-games h3 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.game {
+    display: inline-block;
+    vertical-align: top;
+    width: 250px;
+    padding: 20px;
+    margin: 10px;
+    background-color: rgba(255, 255, 255, 0); /* Cambia el valor alpha a 0 para hacer el contenedor completamente transparente */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+
+.game img {
+    width: 150px;
+    border-radius: 10px;
+}
+
+.game h4 {
+    margin-top: 10px;
+    color: #fff;
+}
+
+.game p {
+    color: #ccc;
+}
+
+.game button {
+    margin-top: 10px;
+}
+

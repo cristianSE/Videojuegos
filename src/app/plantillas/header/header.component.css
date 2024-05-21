@@ -1,0 +1,30 @@
+.header {
+    background-color: rgba(128, 0, 128, 0.6); /* Morado con 80% de opacidad */
+    padding: 10px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-left, .nav-center, .nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-center {
+    justify-content: center;
+    flex: 1;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.nav a.active {
+    font-weight: bold;
+}

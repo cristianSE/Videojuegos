@@ -1,0 +1,50 @@
+.cuadro {
+  background-color: rgba(31, 31, 31, 0); /* Fondo completamente transparente */
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centrar verticalmente */
+  height: 100vh; /* Altura completa de la ventana */
+}
+
+.contenedor {
+  display: flex;
+  flex-direction: column; /* Columna para que las imágenes estén arriba y el texto abajo */
+  align-items: center; /* Centrar horizontalmente */
+}
+
+.imagenes-container {
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente */
+  margin-bottom: 20px; /* Espacio entre las imágenes y el texto */
+}
+
+.imagen-item img {
+  max-width: 100px;
+  height: auto;
+  border-radius: 5px;
+  margin-right: 10px; /* Espacio entre las imágenes */
+}
+
+.textos-container {
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente */
+  width: 100%; /* Ancho completo para alineación */
+}
+
+.texto-item {
+  margin-right: 10px; /* Espacio entre textos */
+}
+
+.texto {
+  background-color: rgba(240, 240, 240, 0); /* Fondo completamente transparente */
+  color: white; /* Color del texto blanco */
+  padding: 10px;
+  border-radius: 5px;
+  max-width: 100px; /* Igualar el ancho de las imágenes */
+  text-align: center; /* Centrar el texto */
+}

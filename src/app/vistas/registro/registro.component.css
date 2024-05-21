@@ -1,0 +1,49 @@
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(18, 18, 18, 0.9);
+  border: 2px solid #8a2be2;
+  border-radius: 10px;
+  padding: 20px;
+  width: 80%;
+  max-width: 600px; /* Ajusta el ancho máximo */
+  margin: 100px auto 0 auto;
+  color: white;
+}
+
+.input-container {
+  display: flex;
+  justify-content: center; /* Centra los elementos horizontalmente */
+}
+
+.form-column {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px; /* Ajusta el espacio entre las columnas */
+}
+
+.button-container {
+  margin-top: 20px;
+  align-self: center; /* Centra el contenedor de botones horizontalmente */
+}
+
+.mat-raised-button {
+  background-color: #8a2be2;
+  color: white;
+  width: 50%; /* Ancho del botón al 50% para centrarlo */
+}
+
+.mat-raised-button:hover {
+  background-color: #ff69b4;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+}
+
+.success-message {
+  color: green;
+}

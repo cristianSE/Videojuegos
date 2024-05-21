@@ -1,0 +1,66 @@
+<app-header></app-header>
+
+<div class="form-container">
+  <div class="input-container">
+    <div class="form-column">
+      <mat-form-field appearance="fill">
+        <mat-label>Nombre</mat-label>
+        <input matInput [formControl]="nombre" required>
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Contraseña</mat-label>
+        <input matInput [formControl]="password" type="password" required>
+      </mat-form-field>
+    </div>
+
+    <div class="form-column">
+      <mat-form-field appearance="fill">
+        <mat-label>Correo Electrónico</mat-label>
+        <input matInput [formControl]="correo" required>
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Repetir Contraseña</mat-label>
+        <input matInput [formControl]="repetirPassword" type="password" required>
+      </mat-form-field>
+    </div>
+  </div>
+
+  <div class="button-container">
+    <button mat-raised-button color="primary" (click)="EnviarDatos()" [disabled]="loading">
+      <span *ngIf="!loading">Enviar</span>
+      <mat-spinner *ngIf="loading" diameter="20"></mat-spinner>
+    </button>
+  </div>
+
+  <!-- Mensajes de error y éxito -->
+  <div *ngIf="nombre.invalid && (nombre.dirty || nombre.touched)" class="error-message">
+    El nombre es requerido y debe tener entre 8 y 30 caracteres.
+  </div>
+
+  <div *ngIf="correo.invalid && (correo.dirty || correo.touched)" class="error-message">
+    El correo electrónico es requerido y debe tener un formato válido.
+  </div>
+
+  <div *ngIf="password.invalid && (password.dirty || password.touched)" class="error-message">
+    La contraseña es requerida y debe tener al menos 8 caracteres, una letra mayúscula y un carácter especial.
+  </div>
+
+  <div *ngIf="repetirPassword.invalid && (repetirPassword.dirty || repetirPassword.touched)" class="error-message">
+    La confirmación de la contraseña es requerida.
+  </div>
+
+  <div *ngIf="password.value !== repetirPassword.value && repetirPassword.touched" class="error-message">
+    Las contraseñas no coinciden.
+  </div>
+
+  <div *ngIf="successMessage" class="success-message">
+    {{ successMessage }}
+  </div>
+
+  <div class="registration-message">
+    <p>¡Esta es la página de registro!</p>
+    <p>¿Ya tienes una cuenta? <a routerLink="/login">Inicia sesión aquí</a>.</p>
+  </div>
+</div>

@@ -1,0 +1,26 @@
+.footer {
+  background-color: rgba(128, 0, 128, 0.6);
+  color: #fff;
+  padding: 10px 0; /* Reducimos el padding para ocupar menos espacio verticalmente */
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+.footer .container {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between; /* Para mover el texto "Administración" a la derecha */
+  align-items: center;
+}
+
+.footer .container p {
+  margin: 0; /* Eliminamos el margen del párrafo para que no haya espacio adicional */
+}
+
+.footer .container a {
+  text-decoration: none;
+  color: #fff;
+}

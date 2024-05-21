@@ -1,0 +1,18 @@
+<app-header></app-header>
+
+<div class="cuadro">
+  <div class="contenedor">
+    <div class="imagenes-container">
+      <div class="imagen-item" *ngFor="let imagen of imagenes; let i = index">
+        <img [src]="'data:image/png;base64,' + imagen.imagen" alt="Imagen de videojuego" />
+        <div class="texto">
+          <p><strong>Título:</strong> {{ videojuegos[i]?.titulo }}</p>
+          <p><strong>Descripción:</strong> {{ videojuegos[i]?.descripcion }}</p>
+          <p><strong>Precio:</strong> {{ videojuegos[i]?.precio }}</p>
+          <p><strong>Género:</strong> {{ videojuegos[i]?.genero }}</p>
+          <p><strong>Plataforma:</strong> {{ videojuegos[i]?.plataforma }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

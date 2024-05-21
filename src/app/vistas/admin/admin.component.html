@@ -1,0 +1,41 @@
+<header class="header">
+  <nav class="headernav">
+    <a routerLink="/adminvideojuego" routerLinkActive="active">Administracion de videojuego</a>
+    <a routerLink="/admin" routerLinkActive="active">Administracion Usuarios</a>
+  </nav>
+</header>
+
+<div class="container">
+  <h2 class="title">Usuarios Registrados</h2>
+  <p class="admin-info">Bienvenido a la página de administración de usuarios</p> <!-- Texto adicional -->
+  <button routerLink="/adminvideojuego" routerLinkActive="active" class="admin-button">Administración de Videojuegos</button> <!-- Botón para el enlace -->
+
+  <div class="button-container">
+    <input type="text" [(ngModel)]="datoBuscarEliminar" placeholder="Nombre de usuario o Correo electrónico">
+    <select [(ngModel)]="accion" class="select">
+      <option value="buscar">Buscar usuarios</option>
+      <option value="eliminar">Eliminar usuarios</option>
+    </select>
+    <button class="action-button" (click)="realizarAccion()">Realizar acción</button>
+  </div>
+
+  <div class="table-container">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Nombre Completo</th>
+          <th>Correo Electrónico</th>
+          <th>Fecha Registro</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let usuario of usuarios">
+          <td>{{ usuario.Nombre }}</td>
+          <td>{{ usuario.CorreoElectronico }}</td>
+          <td>{{ usuario.FechaRegistro }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+

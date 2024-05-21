@@ -1,0 +1,118 @@
+/* Estilos generales */
+.container {
+    text-align: center; /* Centrar el contenido horizontalmente */
+    margin-top: 70px; /* Margen superior */
+}
+
+.title {
+    color: white; /* Color del texto */
+}
+
+/* Estilos para el contenedor de la tabla */
+.table-container {
+    margin: 20px auto; /* Centrar la tabla horizontalmente */
+    width: 80%; /* Ancho de la tabla */
+}
+
+/* Estilos para el contenedor de botones y entrada de texto */
+.button-container {
+    margin-bottom: 10px;
+}
+
+/* Estilos para el campo de entrada de texto */
+input[type="text"] {
+    padding: 8px;
+    border: 1px solid rgba(128, 0, 128, 0.8); /* Borde morado */
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+/* Estilos para el botón de acción */
+.action-button {
+    background-color: rgba(128, 0, 128, 0.8); /* Morado con 80% de opacidad */
+    color: white; /* Color del texto */
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.action-button:hover {
+    background-color: rgba(128, 0, 128, 1); /* Morado al pasar el ratón */
+}
+
+/* Estilos para la tabla */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th,
+.table td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Borde inferior con opacidad */
+    color: white; /* Color del texto */
+}
+
+.table th {
+    background-color: rgba(128, 0, 128, 0.8); /* Morado con 80% de opacidad */
+}
+
+.table td {
+    background-color: rgba(0, 0, 0, 0.8); /* Negro con 80% de opacidad */
+}
+
+.table tr:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Cambio de color al pasar el ratón con opacidad */
+}
+
+/* Estilos adicionales */
+.select {
+    padding: 8px;
+    border: 1px solid rgba(128, 0, 128, 0.8); /* Borde morado */
+    border-radius: 4px;
+    margin-right: 10px;
+    background-color: rgba(128, 0, 128, 0.8); /* Morado con 80% de opacidad */
+    color: white; /* Color del texto */
+}
+
+.admin-info {
+    color: white;
+    margin-bottom: 10px; /* Espacio entre el título y el texto adicional */
+}
+
+.admin-button {
+    background-color: rgba(128, 0, 128, 0.8); /* Morado con 80% de opacidad */
+    color: white; /* Color del texto */
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 10px; /* Espacio entre el texto adicional y el botón */
+}
+
+.admin-button:hover {
+    background-color: rgba(128, 0, 128, 1); /* Morado al pasar el ratón */
+}
+
+.header {
+    background-color: rgba(128, 0, 128, 0.6); /* Morado con 80% de opacidad */
+    padding: 10px;
+  }
+
+.headernav {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .headernav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  .headernav a.active {
+    font-weight: bold;
+  }
+  

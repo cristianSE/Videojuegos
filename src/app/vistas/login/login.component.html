@@ -1,0 +1,43 @@
+<app-header></app-header>
+
+<div class="form-container">
+  <h2>¡Bienvenido!</h2>
+  <p>Por favor, inicia sesión para acceder a tu cuenta.</p>
+
+  <div class="input-container">
+    <mat-form-field appearance="fill">
+      <mat-label>Correo Electrónico</mat-label>
+      <input matInput [formControl]="correo" required>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Contraseña</mat-label>
+      <input matInput [formControl]="password" type="password" required>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Repetir Contraseña</mat-label>
+      <input matInput [formControl]="repetirPassword" type="password" required>
+    </mat-form-field>
+  </div>
+
+  <div class="button-container">
+    <button mat-raised-button color="primary" (click)="ComprobarDatos()" [disabled]="loading">Iniciar Sesión</button>
+    <button mat-raised-button color="accent" routerLink="/registro">Registrarse</button>
+  </div>
+
+  <div *ngIf="correo.invalid && (correo.dirty || correo.touched)" class="error-message">
+    El correo electrónico es requerido y debe tener un formato válido.
+  </div>
+
+  <div *ngIf="password.invalid && (password.dirty || password.touched)" class="error-message">
+    La contraseña es requerida y debe tener al menos 8 caracteres y un carácter especial.
+  </div>
+
+  <div *ngIf="repetirPassword.invalid && (repetirPassword.dirty || repetirPassword.touched)" class="error-message">
+    Por favor, repite la contraseña correctamente.
+  </div>
+   <a routerLink="/editarpassword" routerLinkActive="active">Olvidaste la contraseña?</a>
+  <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div> <!-- Agregar mensaje de error -->
+</div>
+
